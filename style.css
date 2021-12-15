@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
 .calculator .display .previous-value, .calculator .record .record-item .expression-text {
   color: #a7a9be;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   word-break: break-all;
 }
 
 @media (min-width: 40em) {
   .calculator .display .previous-value, .calculator .record .record-item .expression-text {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -45,12 +45,12 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
 }
 
 @media (min-width: 40em) {
   body {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
@@ -76,7 +76,7 @@ button:hover {
 
 @media (min-width: 40em) {
   button {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 }
 
@@ -97,7 +97,7 @@ button.active {
 @media (min-width: 40em) {
   .operator,
   .equal {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
@@ -111,12 +111,18 @@ button.active {
 
 .spec-btn:not(.spec-btn:first-child) span {
   position: relative;
-  top: -4px;
+  top: -3px;
+}
+
+@media (min-width: 40em) {
+  .spec-btn:not(.spec-btn:first-child) span {
+    top: -1rem;
+  }
 }
 
 @media (min-width: 40em) {
   .spec-btn:not(.spec-btn:first-child) {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 }
 
@@ -140,6 +146,12 @@ button.active {
     display: grid;
     -ms-grid-columns: 3fr 1fr;
         grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media (min-width: 64em) {
+  .calculator {
+    max-width: 85rem;
   }
 }
 
@@ -189,7 +201,7 @@ button.active {
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
   display: none;
-  height: 75vh;
+  height: 65vh;
   overflow-y: auto;
 }
 
@@ -209,13 +221,15 @@ button.active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
+  font-size: 2rem;
   position: relative;
   margin-bottom: 1rem;
 }
 
 .calculator .record .record-title > i {
   cursor: pointer;
+  position: relative;
+  top: 2px;
 }
 
 .calculator .record .record-title > i:hover {
