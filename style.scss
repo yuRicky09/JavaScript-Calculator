@@ -104,6 +104,7 @@ button.active {
 
 /*========== 計算機樣式 ========== */
 .calculator {
+  touch-action: manipulation;
   width: 95%;
   max-width: 50rem;
   padding: 1rem;
